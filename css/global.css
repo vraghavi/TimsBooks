@@ -11,7 +11,8 @@
   custom properties are always defined in :root (not in html).
 */
 :root {
-  --title-font-family: "Proza Libre", serif;
+  --title-font-family: "Marker Felt", sans-serif;
+  --title-font-color: #009962;
   --default-font-family: "Roboto", sans-serif;
   /* 
     16px is the default font size set by browswers in the html tag.
@@ -24,8 +25,8 @@
   --default-text-color: #111;
   --neutral-color: #4e4e4e;
 
-  --primary-color: dodgerblue;
-  --primary-color-dark: darkblue;
+  --primary-color: #009962;
+  --primary-color-dark: #008e5a;
   --primary-background-color: whitesmoke;
   --secondary-background-color: burlywood;
   --card-background-color: navajowhite;
@@ -167,11 +168,13 @@ body {
 .button,
 .button:visited {
   display: inline-block;
+  border: none;
   background: var(--primary-color);
   color: white;
   text-decoration: none;
   padding: 0.5em 1em;
   cursor: pointer;
+  border-radius: 12px;
 }
 
 .button:hover,

@@ -6,10 +6,7 @@
     <meta name="description" content="The homepage for My Bookstore" />
 
     <!-- Import font-awesome icons -->
-    <link
-      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" />
 
     <!-- order of CSS files is important (this is the "Cascade" part of CSS) -->
 
@@ -27,24 +24,41 @@
   <body>
     <main>
       <header class="container">
-        <section class="bookstore-logo">
+        <section class="tims-books-logo">
           <a href="index.html">
             <img
-              src="images/site/bookstore-logo.png"
-              alt="Another Bookstore Logo"
+              src="images/site/tims-books-logo.png"
+              alt="Tims Books Logo"
               width="150px"
               height="auto"
             />
           </a>
         </section>
-        <section class="title-and-search-bar">
-          <h1 class="text-logo">Another Bookstore</h1>
-          <form action="category.html">
+        <section class="title">
+            <h1 class="text-logo">Tim's Books</h1>
+        </section>
+        <section class="menus">
+            <a href="">Categories</a> |
+            <a href="">New Release</a> |
+            <a href="">Best Sellers</a> |
+        </section>
+        <section class="cart-logout-search">
+            <button class="button"><i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+            <button class="button"><i class="fa-solid fa-cart-shopping"></i></button>
+            <br/>
+            <form class="search" action="category.html">
+                <input type="text" class="search-bar" />
+                <button type="submit" class="button search-button" ><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </section>
+        <!-- <section class="title-and-search-bar"> -->
+          
+          <!-- <form action="category.html">
             <input type="text" class="search-bar" /><br />
             <input type="submit" class="button search-button" value="Search" />
           </form>
-        </section>
-        <section class="header-dropdown-and-cart">
+        </section> -->
+        <!-- <section class="header-dropdown-and-cart">
           <button class="button">cart (0)</button>
           <button class="button">login</button>
           <div class="header-dropdown">
@@ -56,7 +70,7 @@
               <li><a href="category.html?category=Romance">Romance</a></li>
             </ul>
           </div>
-        </section>
+        </section> -->
       </header>
       <div class="home-page">
         <section class="welcome-text flow-content container dark-background">
