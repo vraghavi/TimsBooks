@@ -122,7 +122,7 @@ textarea {
   That's because "elem + elem" means that the rule should be applied
   to the first elem only when it is followed by another elem.
 */
-.flow-content > * + * {
+.flow-content>*+* {
   margin-top: 1rem;
 }
 
