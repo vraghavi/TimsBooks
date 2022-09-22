@@ -34,6 +34,12 @@ header {
   font-weight:bolder;
   font-size: larger;
 }
+.menus a {
+  text-decoration: none;
+}
+.menus a:hover {
+  text-decoration: underline;
+}
 
 .search {
   background-color: var(--primary-color);
@@ -74,6 +80,36 @@ header {
 
 .cart-logout-search {
   width:8%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 3% 3%;
+  z-index: 1;
+  border: 1px solid var(--primary-color);
+  font-size: smaller;
+  font-weight: normal;
+}
+
+.dropdown-content li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid var(--primary-color);
+  padding: 0.5em;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 @media (max-width: 600px) {
