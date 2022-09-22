@@ -153,7 +153,7 @@ body {
   font-family: var(--default-font-family);
   font-size: var(--default-font-size);
   margin: 0 auto;
-  max-width: 70rem;
+  max-width: 85rem;
 }
 
 /* BUTTONS */
@@ -181,6 +181,10 @@ body {
 .button:active {
   background: var(--primary-color-dark);
   color: white;
+}
+
+.primary-button {
+  border-radius: 4px;
 }
 
 /* LINKS */
